@@ -367,29 +367,43 @@ Emeği geçen herkese teşekkürler. </p>
                 </div>
             </div>
         </section><!-- Testimonial end -->
-        <!-- Contact form -->
-        <section id="contact_form">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2>Sorunuz mu var?</h2>
-                        <h2 class="second_heading">İletişime geçmek için buyrun!</h2>
-                    </div>
-                    <form role="form" class="form-inline text-right col-md-6" >
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="name" placeholder="isim">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="email" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" rows="5" id="msg" placeholder="Mesaj"></textarea>
-                        </div>
-                        <button type="submit" class="btn submit_btn">Gönder</button>
-                    </form>				
-                </div>
-            </div>
-        </section><!-- Contact form end -->
+<div class="container form-top">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+				<div class="panel panel-danger">
+					<div class="panel-body">
+						<form id="reused_form">
+						 	<div class="form-group">
+						 		<label >Name</label>
+						 		<input type="text" name="name" required class="form-control" placeholder="Enter Name">
+						 	</div>
+						 	<div class="form-group">
+						 		<label >Email</label>
+						 		<input type="email" name="email" required  class="form-control" placeholder="Enter Email">
+						 	</div>
+						 	<div class="form-group">
+						 		<label >Message</label>
+						 		<textarea rows="3" name="message" class="form-control" placeholder="Type Your Message"></textarea>
+						 	</div>
+						 	<div class="form-group">
+						 		<button class="btn btn-raised btn-lg btn-warning"
+						 		type="submit">Send</button>
+						 	</div>
+						</form>
+
+						<div id="error_message" style="width:100%; height:100%; display:none; ">
+						<h4>Error</h4>
+						Sorry there was an error sending your form.
+						</div>
+						<div id="success_message" style="width:100%; height:100%; display:none; ">
+						<h2>Success! Your Message was Sent Successfully.</h2>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
         <!-- Footer -->
         <footer>
             <!-- Footer top -->
@@ -429,24 +443,25 @@ Emeği geçen herkese teşekkürler. </p>
                         <div class="footer_item">
                             <h4>En son haberler</h4>
                             <ul class="list-unstyled post">
-                                <li><a href=""><tr class="Sitemiz yapım aşamasındadır"> <small></small></tr>  </a></li>
-                             
+                                <li><a href=""><span class="date">19 <small>OCAK</small></span>  Luptatum omittantur duo ne mpetus indoctum</a></li>
+                                <li><a href=""><span class="date">19 <small>OCAK</small></span>  Luptatum omittantur duo ne mpetus indoctum</a></li>
+                                <li><a href=""><span class="date">19 <small>OCAK</small></span>  Luptatum omittantur duo ne mpetus indoctum</a></li>
+                                <li><a href=""><span class="date">19 <small>OCAK</small></span>  Luptatum omittantur duo ne mpetus indoctum</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-5">
                         <div class="footer_item">
-                            <h4>iletişim için</h4>
+                            <h4>Contact us</h4>
                             <ul class="list-unstyled footer_contact">
-                                <li><a href=""><tr class="fa fa-map-marker"></tr> Egriçam mah. 22124. Sk. 4/A Yenişehir/Mersin/Türkiye
-                                  <li><a href="https://goo.gl/maps/M9VTKTF5tsw"><tr class="fa fa-envelope"></tr>Haritada görmek için tıklayın</li>
-                                <li><a href=""><tr class="fa fa-envelope"></tr> eventcncteknik@gmail.com</a></li>
-                                <li><a href=""><tr class="fa fa-mobile"></tr><p>+90 541 824 6288 <br /></p></a></li>
+                                <li><a href="https://goo.gl/maps/M9VTKTF5tsw"><span class="fa fa-map-marker"></span> Egriçam mah. 22124. Sk. 4/A Yenişehir/Mersin/Türkiye</a></li>
+                                <li><a href=""><span class="fa fa-envelope"></span>eventcncteknik@gmail.com</li>
+                                <li><a href=""><span class="fa fa-mobile"></span><p>+90 541 824 6288 <br /></p></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </div><!-- Footer top end -->
+            </div><!-- Footer top end --
 
             <!-- Footer bottom -->
             <div class="footer_bottom text-center">
